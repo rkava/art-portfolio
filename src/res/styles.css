@@ -3,9 +3,11 @@
 html { 
 	scroll-behavior: smooth;
 	font-family: 'Roboto', sans-serif;
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
+	-ms-overflow-style: none;  
+	scrollbar-width: none;  
 }
+
+body { width: 100vw }
 
 html::-webkit-scrollbar{ display: none; }
 
@@ -95,4 +97,50 @@ a:hover   { color: rgb(102, 102, 102); }
 
 .tag:hover {
 	color: rgb(102, 102, 102);
+}
+
+.preview {
+	height: 100vh;
+	width: 100vw; 
+	top: 0;
+	left: 0;
+	position: fixed;
+	transition: opacity 300ms;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.background {
+	background-color: black;
+	opacity: 0.7;
+	height: 100%;
+	width: 100%; 
+}
+
+.image {
+	position: fixed;
+	margin: auto;
+	max-height: 80vh;
+	max-width: 80vw;
+	height: auto;
+	width: auto; 
+	top: 70px;
+	left: 50%;
+	transform: translate( -50%, 0 );
+	box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+}
+
+.preview.show {
+	opacity: 100;
+	visibility: visible;
+}
+
+.summary {
+	font-size: 20px;
+	position: fixed; 
+	height: auto;
+	padding: 10px;
+	width: auto; 
+	background-color: white;
+	box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
 }

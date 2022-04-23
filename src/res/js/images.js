@@ -51,14 +51,15 @@ export default function populateImages( tag ) {
 		let parent = document.getElementById( data.images[ x ].date.replace( '/', '-' ) )
 
 		let element = document.createElement( 'div' )
-		
+
+		element.innerHTML = `<div 
+			style="background-image:url('thumbnails/${data.images[x].name}');"
+			onclick="onImageClick('${ data.images[ x ].name }')"
+			class="card"
+		</div>`
+
 		element.id = data.images[ x ].name
-		element.onclick   = `onImageClick('${data.images[x].name}')`
-		element.style     = `background-image:url('thumbnails/${data.images[x].name}');`
-		element.classList = 'card' 
-
 		parent.appendChild( element ) 
-
 	}
 
 }
