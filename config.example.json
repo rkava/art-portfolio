@@ -6,6 +6,7 @@
 	"images": [
 		{
 			"name": "The filename of the image in the /img folder",
+			"date": "MM/YYYY",
 			"description": "A description of the image",
 			"tags": [ "comma", "seperated", "tags" ]
 		} 

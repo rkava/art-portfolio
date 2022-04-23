@@ -9,10 +9,10 @@ const output  = fs.createWriteStream( './.zip' )
 archive.pipe( output ) 
 
 let entries = 0
+let expected = config.images.length + 3 
 
-archive.on( 'entry', data => { 
-	if( ++entries == (config.images.length - 1) + 3 ) 
-		archive.finalize() 
+archive.on( 'entry', data => {  
+	if( ++entries == expected ) archive.finalize() 
 })
 
 for( let x in config.images ) {
