@@ -1,0 +1,5 @@
+node_modules/
+src/res/script.min.js
+img/*
+config.json
+.zip

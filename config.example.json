@@ -1,0 +1,13 @@
+{
+	"header": {
+		"title": "Title for the webpage", 
+		"description": "A brief description of the site"
+	},
+	"images": [
+		{
+			"name": "The filename of the image in the /img folder",
+			"description": "A description of the image",
+			"tags": [ "comma", "seperated", "tags" ]
+		} 
+	] 
+}

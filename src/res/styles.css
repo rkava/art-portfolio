@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
+
+html { 
+	scroll-behavior: smooth;
+	font-family: 'Roboto', sans-serif;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar{ display: none; }
+
+a:link    { text-decoration: none; color: black; }
+a:visited { color: black; }
+a:hover   { color: rgb(102, 102, 102); }
+
+
+.images {
+	width: 60%;
+	margin: auto;
+	margin-right: 22%;
+}
+
+.date {
+	position: absolute;
+	top: -40px;
+	width: 100%;
+	font-size: 20px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #dedede;
+	flex-basis:100%;
+}
+
+.date-box {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	grid-auto-rows: 260px;
+	padding-bottom: 70px;
+	width:fit-content;
+}
+
+.header {
+	width: 60%;
+	height: auto;
+	margin: auto;
+	margin-right: 22%;
+	padding-bottom: 70px;
+	padding-top: 20px;
+}
+
+.header h1 { font-size: 50px; }
+  
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #353535;
+	font-size: 3rem;
+	color: #fff;
+	box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+	height: 260px;
+	width: 260px;
+	border-radius: 2px;
+	transition: all 500ms;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.tags {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: fixed; 
+	height: fit-content;
+	width: auto;
+	margin-left: -15px;
+	overflow: auto;
+	transform: translateX(-100%);
+}
+
+.tag {
+	margin: 5px;
+	font-size: 25px;
+	cursor: pointer;
+	padding: 2px;
+}
+
+.tag:hover {
+	color: rgb(102, 102, 102);
+}
