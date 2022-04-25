@@ -1,8 +1,9 @@
 {
-	"header": {
-		"title": "Title for the webpage", 
-		"description": "A brief description of the site"
-	},
+
+	"title": "Title for the webpage", 
+	"description": "A brief description of the site",
+	"watermark": "True/false, is there a watermark.png included in the config",
+	"favicon": "True/false, is there a favicon.ico included in the config",
 	"images": [
 		{
 			"name": "The filename of the image in the /img folder",

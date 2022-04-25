@@ -4,8 +4,7 @@
   "main": "src/main.js",
   "license": "MIT",
   "scripts": {
-    "build-npm": "npm install && webpack && node src/main.js",
-	"build": "yarn && webpack && node src/main.js"
+	"build": "webpack && node src/main.js"
   },
   "dependencies": {
     "archiver": "^5.3.1",

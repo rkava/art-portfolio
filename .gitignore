@@ -1,5 +1,5 @@
 node_modules/
+config/
 src/res/script.min.js
-img/*
-config.json
 .zip
+todo

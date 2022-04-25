@@ -4,10 +4,12 @@ import imageClicked   from './preview'
 
 window.onload = function() {
 
-	document.title = data.header.description 
+	document.title = data.description 
+	document.body.oncontextmenu = () => false 
 
 	populateHeader() 
 	populateImages() 
+
 }
 
 window.onImageClick = imageClicked

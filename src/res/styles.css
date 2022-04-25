@@ -7,12 +7,14 @@ html {
 	scrollbar-width: none;  
 }
 
-body { width: 100vw }
+body { width: 100vw; overflow-x: hidden; background-color: #282c34; color: rgb(222, 226, 230) }
+
+p { font-size: 20px; }
 
 html::-webkit-scrollbar{ display: none; }
 
-a:link    { text-decoration: none; color: black; }
-a:visited { color: black; }
+a:link    { text-decoration: none; color: rgb(222, 226, 230); }
+a:visited { color: rgb(222, 226, 230) }
 a:hover   { color: rgb(102, 102, 102); }
 
 
@@ -25,22 +27,21 @@ a:hover   { color: rgb(102, 102, 102); }
 .date {
 	position: absolute;
 	top: -40px;
-	width: 100%;
 	font-size: 20px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #dedede;
 	flex-basis:100%;
+	width: 100%;
 }
 
 .date-box {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 15px;
 	grid-auto-rows: 260px;
 	padding-bottom: 70px;
-	width:fit-content;
+	width: fit-content;
 }
 
 .header {
@@ -48,8 +49,7 @@ a:hover   { color: rgb(102, 102, 102); }
 	height: auto;
 	margin: auto;
 	margin-right: 22%;
-	padding-bottom: 70px;
-	padding-top: 20px;
+	padding-bottom: 60px;
 }
 
 .header h1 { font-size: 50px; }
@@ -90,7 +90,7 @@ a:hover   { color: rgb(102, 102, 102); }
 
 .tag {
 	margin: 5px;
-	font-size: 25px;
+	font-size: 22px;
 	cursor: pointer;
 	padding: 2px;
 }
@@ -112,7 +112,7 @@ a:hover   { color: rgb(102, 102, 102); }
 
 .background {
 	background-color: black;
-	opacity: 0.7;
+	opacity: 0.4;
 	height: 100%;
 	width: 100%; 
 }
@@ -127,7 +127,7 @@ a:hover   { color: rgb(102, 102, 102); }
 	top: 70px;
 	left: 50%;
 	transform: translate( -50%, 0 );
-	box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+	box-shadow: rgba(39, 39, 39, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
 }
 
 .preview.show {
@@ -141,6 +141,6 @@ a:hover   { color: rgb(102, 102, 102); }
 	height: auto;
 	padding: 10px;
 	width: auto; 
-	background-color: white;
+	background-color: #2b3138 ;
 	box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
 }

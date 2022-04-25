@@ -5,8 +5,8 @@ export default function populateHeader() {
 	let element = document.createElement( 'div' ) 
 
 	element.innerHTML = `<div> 
-			<h1> ${ data.header.title } </h1> 
-			<p>  ${ data.header.description } </p> 
+			<h1> ${ data.title } </h1> 
+			<p>  ${ data.description } </p> 
 		</div>`
 	
 	parent.appendChild( element ) 

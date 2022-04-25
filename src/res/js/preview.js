@@ -19,18 +19,14 @@ export default function imageClicked( name ) {
 
 		container.classList.toggle( 'show' ) 
 
-		console.log( image.width ) 
-
 		summary.style.left = '50%'
 		summary.style.top = '0px'
 		summary.style.transform = 'translate( -' 
 			+ ( image.width / 2 ) + 'px,' 
 			+ ( image.height + 80) + 'px)'
-
 	
 		summary.innerHTML = `
-			 <b> ${ obj.name } </b> | ${ obj.description } </h3> `	
-
+			 <b> ${ obj.name.split( '.' )[ 0 ] } </b> | ${ obj.description } </h3> `	
 	}
 
 	image.src = 'images/' + name 
