@@ -50,6 +50,8 @@ export default function populateImages( tag ) {
 
 		let parent = document.getElementById( data.images[ x ].date.replace( '/', '-' ) )
 
+		console.log( parent ) 
+
 		let element = document.createElement( 'div' )
 
 		element.innerHTML = `<div 

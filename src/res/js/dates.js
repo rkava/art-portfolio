@@ -12,7 +12,7 @@ export default function createDates( tag ) {
 		}
 	}
 
-	for( let x in dates ) {
+	for( let x = dates.length - 1; x >= 0; x-- ) {
 
 		let element = document.createElement( 'div' ) 
 
