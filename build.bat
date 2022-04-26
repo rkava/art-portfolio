@@ -1,1 +1,1 @@
-webpack && node src/main.js
+npm run build 
