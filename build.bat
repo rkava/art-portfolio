@@ -1,0 +1,1 @@
+webpack && node src/main.js
