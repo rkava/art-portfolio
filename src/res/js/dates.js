@@ -16,7 +16,7 @@ export default function createDates( tag ) {
 
 		let element = document.createElement( 'div' ) 
 
-		let month = months[ parseInt( dates[ x ].split( '/' )[ 0 ] ) ] 
+		let month = months[ parseInt( dates[ x ].split( '/' )[ 0 ] ) - 1 ] 
 		let year  = dates[ x ].split( '/' )[ 1 ] 
 
 		element.innerHTML = 
